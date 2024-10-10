@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+body{
+    background-color: rgb(241, 161, 241);
+}
+
+/* Nav bar */
+nav{
+    background-color: aliceblue;
+    margin: 0.4rem;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* About me */
+.aboutme{
+    /* border: 2px solid red; */
+    padding: 1rem;
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    border: 2px solid black;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0.7rem;
+    text-align: center;
+}
+.box:nth-child(1){
+    width: 80vw;
+}
+.box:nth-child(2){
+    width: 60vw;
+}
+.box:nth-child(3){
+    text-align: center;
+    width: 80vw;
+}
+.contactme{
+    /* border: 2px solid black; */
+    position: relative;
+    padding: 2vw 0 2vw 2vw;
+    top: 9vh;
+    background-color: aliceblue;
+    width: 96vw;
+    margin: 1vw;
+    margin-right: 1vw;
+}
+.info{
+    padding: 0.1rem;
+}
+
