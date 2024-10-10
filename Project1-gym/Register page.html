@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        *{
+            color: white;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .navbar {
+            /* border: 2px solid rgb(57, 69, 105); */
+            border-radius: 30px;
+            width: auto;
+            text-align: center;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar ul li {
+            color: white;
+            list-style: none;
+            padding: 10px;
+            float: left;
+            margin-top: 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        nav ul li a:hover {
+            font-family: "Kanit", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        #callus {
+            color: white;
+            float: right;
+            border: 2px solid grey;
+            border-radius: 15px;
+            padding: 5px;
+            margin-right: 30px;
+            margin-top: 10px;
+        }
+        #callus a{
+            font-size: 20px;
+        }
+
+        #logo {
+            width: 80px;
+            height: 80px;
+            float: left;
+            margin: 0px;
+            margin-top: 5px;
+            margin-right: 450px;
+        }
+        .container2{
+            border: 2px solid white;
+            text-align: center;
+            width: 400px;
+            margin: 100px auto;
+            padding: 10px;
+            border-radius: 40px;
+        }
+        .form input, textarea{
+            background-color: rgb(77, 53, 3);
+            border-radius: 10px;
+            text-align: center;
+        }
+        div{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <img id="logo"
+                    src="https://dynamic.design.com/asset/logo/e12c29fc-abc8-4b97-a162-432d1a603b4d/logo-search-grid-1x?logoTemplateVersion=1&v=637836128616830000&text=BoltGym"
+                    alt="">
+                <li><a href="Project1(gym).html">Home</a></li>
+                <li><a href="Register page.html">Register</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li id="callus"><a href="#">Call us now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container2">
+        <form action="backend.php">
+            <div class="form">
+                <label for="name">Name: </label>
+                <input type="text">
+            </div>
+            <div class="form">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="">
+            </div>
+            <label for="name">Your motivation:</label>
+            <div class="form">
+                <textarea name="" id="" cols="30" rows="2"></textarea>
+            </div>
+            <div class="form">
+                Gender: <br> 
+                Male<input type="radio" name="gender" id="">  <br>     Female<input type="radio" name="gender" id=""> <br>Other<input type="radio" name="gender" id="">
+            </div>
+            <div class="form" id="submit">
+                <input type="reset" value="Reset">
+                <a href="#"><input type="submit" value="Submit"></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
