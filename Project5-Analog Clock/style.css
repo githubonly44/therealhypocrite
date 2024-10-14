@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* .clock::before{
+    background: url("Clock.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 80vh;
+} */
+
+.body{
+    /* border: 2px solid black; */
+    display: flex;
+    height: 90vh;
+}
+ 
+/* Digital Time */
+.time{
+    background-color: antiquewhite;
+    height: 5vh;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Analog Time */
+.clock{
+    position: absolute;
+    top: 10vh;
+    left: 30vw;
+    width: 40vw;
+    height: 40vw;
+    background: url(Clock.jpg) no-repeat center center/cover;
+    /* border: 2px solid brown; */
+}
+
+.arm{
+    background-color: black;
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#secondsarm{
+    height: 40%;
+    top: 10.8%;
+    left: 48.4%;
+    width: 1%;
+}
+#minutesarm{
+    top: 15.8%;
+    left: 47.9%;
+    height: 35%;
+    width: 2%;
+    opacity: 0.6;
+}
+#hoursarm{
+    top: 20.8%;
+    left: 47.4%;
+    height: 30%;
+    width: 3%;
+    opacity: 0.5;
+}
+
+button{
+    position: absolute;
+    top: 2.7%;
+    left: 5%;
+    background-color: aliceblue;
+    padding: 0.3rem;
+    border-radius: 1rem;
+
+}
+
