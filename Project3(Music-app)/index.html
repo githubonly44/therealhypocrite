@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/fa0d89d1e3.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="brand">
+                <div><img src="logo.png" alt="" class="logo"></div>
+                <div>Spotify</div>
+            </div>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Your songs:</h2>
+
+        <div class="songlist">
+
+            <div class="song">
+                <div class="songimg"><img src="covers\1.jpg" alt=""></div>
+                <div>
+                <span class="songname">Legion</span>
+                <span class="play"><button class="songPlay"><i class="fa-solid fa-2x fa-play"></i></button></span>
+                </div>
+            </div>
+            <div class="song">
+                <div class="songimg"><img src="covers\2.jpg" alt=""></div>
+                <div>
+                <span class="songname">Cartel</span>
+                <span class="play"><button class="songPlay"><i class="fa-solid fa-2x fa-play"></i></button></span>
+                </div>
+            </div>
+            <div class="song">
+                <div class="songimg"><img src="covers\3.jpg" alt=""></div>
+                <div>
+                <span class="songname">They Mad</span>
+                <span class="play"><button class="songPlay"><i class="fa-solid fa-2x fa-play"></i></button></span>
+                </div>
+            </div>
+            <div class="song">
+                <div class="songimg"><img src="covers\4.jpg" alt=""></div>
+                <div>
+                <span class="songname">Plug Walk</span>
+                <span class="play"><button class="songPlay"><i class="fa-solid fa-2x fa-play"></i></button></span>
+                </div>
+            </div>
+            <div class="song">
+                <div class="songimg"><img src="covers\5.jpg" alt=""></div>
+                <div>
+                <span class="songname">Song Title</span>
+                <span class="play"><button class="songPlay"><i class="fa-solid fa-2x fa-play"></i></button></span>
+                </div>
+            </div>
+            <div class="song">
+                <div class="songimg"><img src="covers\6.jpg" alt=""></div>
+                <div>
+                <span class="songname">Safety Dance</span>
+                <span class="play"><button class="songPlay"><i class="fa-solid fa-2x fa-play"></i></button></span>
+                </div>
+            </div>
+            <div class="song">
+                <div class="songimg"><img src="covers\7.jpg" alt=""></div>
+                <div>
+                <span class="songname">Back It Up</span>
+                <span class="play"><button class="songPlay"><i class="fa-solid fa-2x fa-play"></i></button></span>
+                </div>
+            </div>
+            <div class="song">
+                <div class="songimg"><img src="covers\8.jpg" alt=""></div>
+                <div>
+                <span class="songname">Name1</span>
+                <span class="play"><button class="songPlay"><i class="fa-solid fa-2x fa-play"></i></button></span>
+                </div>
+            </div>
+            <div class="song">
+                <div class="songimg"><img src="covers\9.jpg" alt=""></div>
+                <div>
+                <span class="songname">Name2</span>
+                <span class="play"><button class="songPlay"><i class="fa-solid fa-2x fa-play"></i></button></span>
+                </div>
+            </div>
+            <div class="song">
+                <div class="songimg"><img src="covers\10.jpg" alt=""></div>
+                <div>
+                <span class="songname">True Love</span>
+                <span class="play"><button class="songPlay"><i class="fa-solid fa-2x fa-play"></i></button></span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="" id="rangebar" min="0" value="0" max="1000">
+        <img src="playing.gif" alt=""><span id="playingsong">Legion</span>
+        <div class="play">
+            <button id="previous"><i class="fa-solid fa-2x fa-backward-step"></i></button>
+            <button id="play"><i class="fa-solid fa-2x fa-play"></i></button>
+            <button id="next"><i class="fa-solid fa-2x  fa-forward-step"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
