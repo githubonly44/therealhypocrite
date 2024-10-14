@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation bar */
+nav{
+    background-color: rgb(197, 140, 251);
+    padding: 10px;
+}
+
+/* Body */
+.body{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: beige;
+}
+
+/* left Display */
+.gamegrid{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+.grid{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+.grid:hover{
+    background-color: rgb(252, 230, 202);
+}
+#grid1, #grid2, #grid3{
+    border-top: none;
+}
+#grid3, #grid6, #grid9{
+    border-right: none;
+}
+#grid7, #grid8, #grid9{
+    border-bottom: none;
+}
+#grid1, #grid4, #grid7{
+    border-left: none;
+}
+
+/* right Display */
+.contentgrid{
+    /* border: 2px solid red; */
+    padding: 1rem;
+    margin-left: 10px;
+    line-height: 2rem;
+}
+
+button{
+    font-weight: bolder;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    background-color: rgb(235, 152, 235);
+    width: auto;
+}
+img{
+    width: 30px;
+    display: none;
+}
+
+@media (max-width: 550px){
+    .body{
+        flex-direction: column;
+        text-align: center;
+    }
+    .gamegrid{
+        justify-content: center;
+        grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+    }
+}
