@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevrolet</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Playwrite FR Moderne", cursive;
+            font-optical-sizing: auto;
+            font-weight: 1000;
+            font-style: normal;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: black;
+            
+        }
+
+        /* Navigation Bar Background  */
+        header {
+            position: relative;
+            z-index: 1;
+        }
+
+        header::before {
+            background: url(image.png) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        /* logo  */
+        #logo {
+            /* position: absolute; */
+            height: 6rem;
+            display: flex;
+            color: rgb(246, 3, 3);
+            align-items: center;
+            flex-direction: column;
+            line-height: 0;
+        }
+
+        #logo img {
+            width: 80px;
+            height: 50px;
+            padding: 1rem;
+        }
+
+        #logo h2 {
+            font-size: large;
+            cursor: default;
+        }
+
+        /* Navigation Bar  */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            opacity: 0.7;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+            padding: 1rem;
+            margin: 1rem;
+        }
+        nav ul a:hover {
+            text-decoration: underline;
+        }
+        nav ul a:active {
+            text-decoration: underline;
+        }
+
+        /* Welcome to the Website  */
+        #welcome {
+
+            text-align: center;
+            /* border: 2px solid black; */
+            padding: 10rem 5rem 3rem 5rem;
+            cursor: default;
+        }
+
+        /* Boxes */
+        #boxes::before {
+            background-color: antiquewhite;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        #boxes {
+            display: flex;
+            position: relative;
+        }
+
+        @media (max-width:985px) {
+            #boxes {
+                flex-direction: column;
+            }
+        }
+
+        .box {
+            border: 2px solid brown;
+            padding: 1rem;
+            border-radius: 2rem;
+            margin: 2rem;
+            text-align: center;
+        }
+
+
+        .box img {
+            width: 15rem;
+            border-radius: 2rem;
+        }
+
+        /* Sponsors */
+        #sponsors h2{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        #sponsors{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .sponsor{
+            padding: 2rem 0;
+        }
+
+        /* Contact Us  */
+        #contactus::before{
+            background-color: black;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.78;
+            z-index: -1;
+        }
+        #contactus{
+            text-align: center;
+            position: relative;
+        }
+        #contactus h2{
+            color: white;
+        }
+        form input, textarea{
+            margin: 0.5rem;
+            padding: 0.3rem;
+            text-align: center;
+            width: 30rem;
+            font-weight: bolder;
+            border-radius: 3rem;
+        }
+        /* Order now button  */
+        button{
+            background-color: bisque;
+            border-radius: 0.4rem;
+            padding: 0.2rem;
+            margin: 0.2rem;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        button:hover{
+            opacity: 1;
+        }
+
+        @media (max-width:550px){
+            nav ul li a{
+                padding: 0;
+                margin: 0.7rem;
+            }
+            #contactus input, textarea{
+                width: 21rem;
+            }
+            #sponsors img{
+                width: 50px;
+            }
+            #welcome{
+                font-size: small;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="logo.jpg" alt="">
+                <h2>Chevrolet</h2>
+            </div>
+            <ul>
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#boxes">About</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#contactus">Contact us</a></li>
+            </ul>
+
+        </nav>
+        <section id="welcome">
+            <h1>Welcome to my website</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure similique ducimus facere laudantium totam
+                dignissimos. Suscipit tenetur dolorum dolorem temporibus exercitationem laboriosam, corrupti, eligendi
+                distinctio eius qui mollitia odit a.</p>
+            <button class="btn">
+                Order Now
+            </button>
+        </section>
+    </header>
+
+    <section id="boxes">
+        <div class="box" id="box1">
+            <img src="ourhistory.jpg" alt="">
+            <h2 class="boxheading">Our History</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam beatae neque explicabo accusamus
+                quisquam
+                minus qui, eius aut praesentium rerum optio pariatur sunt animi dolore saepe quos culpa
+                doloremque
+                quis
+                similique fuga? Tempore accusantium, harum voluptatem neque dolores accusamus non dicta corporis
+                impedit, nemo illo veniam unde qui fugit in.</p>
+        </div>
+        <div class="box" id="box2">
+            <img src="ourservices.jpg" alt="">
+            <h2 class="boxheading">Our Services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ipsam aut! Officia impedit
+                temporibus
+                qui
+                aliquam hic fuga, ex, accusamus quos ut quibusdam sunt, ducimus quas fugiat ipsa similique unde
+                corporis
+                quidem perspiciatis. Ipsum ea numquam, quia consectetur dignissimos quis sequi cumque provident
+                commodi,
+                vel magni nesciunt soluta optio culpa.</p>
+        </div>
+        <div class="box" id="box3">
+            <img src="ourcustomers.jpg" alt="">
+            <h2 class="boxheading">Our Customers</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ipsam aut! Officia impedit
+                temporibus
+                qui
+                aliquam hic fuga, ex, accusamus quos ut quibusdam sunt, ducimus quas fugiat ipsa similique unde
+                corporis
+                quidem perspiciatis. Ipsum ea numquam, quia consectetur dignissimos quis sequi cumque provident
+                commodi,
+                vel magni nesciunt soluta optio culpa.</p>
+        </div>
+    </section>
+
+    <section id="sponsors">
+        <h2>Our Sponsors</h2>
+        <div class="sponsor"><img src="sponsorimage.jpg" alt=""></div>
+        <div class="sponsor"><img src="sponsorimage.jpg" alt=""></div>
+        <div class="sponsor"><img src="sponsorimage.jpg" alt=""></div>
+        <div class="sponsor"><img src="sponsorimage.jpg" alt=""></div>
+        <div class="sponsor"><img src="sponsorimage.jpg" alt=""></div>
+    </section>
+
+    <section id="contactus">
+        <h2>Contact Us</h2>
+        <form action="backend.php">
+            <div><input type="name" placeholder="Name"></div>
+            <div><input type="email" placeholder="Email"></div>
+            <div><input type="number" placeholder="Salary"></div>
+            <div><input type="text" placeholder="Address"></div>
+            <div>
+                <textarea name="About" id="About" cols="21" rows="1" placeholder="About you"></textarea>
+            </div>
+            <div><input type="submit" value="Submit"></div>
+        </form>
+    </section>
+</body>
+
+</html>
